@@ -1,0 +1,6 @@
+<button (click)="toggle()">Change Status</button>
+  <div [@isActiveInactive]="isActive ? 'active' : 'inactive'"
+       class="open-close-container">
+    <p>{{ isActive ? 'Active' : 'Inactive' }}</p>
+  </div>
+
